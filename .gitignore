@@ -1,0 +1,29 @@
+# Node
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment variables
+.env
+.env.*
+
+# Build files
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Docker 
+.Dockerfile.api
+
+# Large datasets and model artifacts
+artifacts/
+data/raw/

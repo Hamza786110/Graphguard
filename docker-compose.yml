@@ -1,0 +1,14 @@
+# Run `python train.py` first so ./artifacts contains results.json, scores.npz, m2mgnn.pt, processed.pt.
+services:
+  db:
+    image: postgres:16
+    environment: { POSTGRES_USER: gg, POSTGRES_PASSWORD: gg, POSTGRES_DB: graphguard }
+    volumes: [pgdata:/var/lib/postgresql/data]
+  api:
+    build: { context: ., dockerfile: Dockerfile.api }
+    environment:
+      DATABASE_URL: postgresql+psycopg2://gg:gg@db:5432/graphguard
+    volumes: ["./artifacts:/app/artifacts:ro"]
+    ports: ["8000:8000"]
+    depends_on: [db]
+volumes: { pgdata: {} }

@@ -1,0 +1,16 @@
+body{font-family:system-ui,sans-serif;margin:0;background:#f6f7f9;color:#1b1f24}
+header{background:#14213d;color:#fff;padding:12px 20px;display:flex;gap:20px;align-items:center}
+header button{background:none;border:0;color:#cbd5e1;font-size:15px;cursor:pointer;padding:6px 10px}
+header button.on{color:#fff;border-bottom:2px solid #fca311}
+main{padding:20px;max-width:1100px;margin:auto}
+table{border-collapse:collapse;width:100%;background:#fff}th,td{padding:7px 10px;border-bottom:1px solid #e5e7eb;text-align:left;font-size:14px}
+tr.click:hover{background:#eef2ff;cursor:pointer}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:14px;margin-bottom:14px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.warn{background:#fff7e6;border:1px solid #ffd591;padding:8px 12px;border-radius:6px;font-size:13px;margin-bottom:12px}
+#cy{height:420px;background:#fff;border:1px solid #e5e7eb;border-radius:8px}
+.about section{margin-bottom:28px}.about h1{font-size:40px;margin:0 0 8px}.about h2{border-bottom:2px solid #fca311;display:inline-block;padding-bottom:2px}
+.hero{background:#14213d;color:#fff;padding:28px;border-radius:10px}.hero button{background:#fca311;border:0;padding:9px 14px;border-radius:6px;font-weight:600;cursor:pointer}
+.muted{color:#6b7280;font-size:14px}.hero .muted{color:#cbd5e1}
+.flow{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap;margin:12px 0}.flow span{align-self:center;font-size:22px}.flow .card{flex:1;min-width:150px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}.grid .card{margin:0}

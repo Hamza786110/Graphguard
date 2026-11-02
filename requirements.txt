@@ -1,0 +1,12 @@
+torch>=2.2
+torch_geometric>=2.5
+numpy
+pandas
+scipy
+scikit-learn
+xgboost>=2.0
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+psycopg2-binary
+psutil
